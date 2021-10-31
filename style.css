@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Mukta:wght@400&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Mukta', sans-serif;
+  font-size: 20px;
+  display: flex;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: circle;
+}
+main header,
+nav header {
+  font-weight: 700;
+  font-size: 30px;
+}
+nav a {
+  display: block;
+  border-top: 1px solid #333;
+  padding: 20px;
+  text-decoration: none;
+  color: rgb(48, 71, 3), 50);
+}
+nav header {
+  padding: 15px;
+}
+
+/* nav */
+nav {
+  border-right: solid 3px rgb(108, 250, 255);
+  width: 2000px;
+  
+  padding: 20px;
+}
+
+/* main */
+main {
+  padding: 25px;
+  height: 100vh;
+  overflow-y: scroll;
+  padding-bottom: 500px;
+
+}
+code pre{
+  background: black;
+  padding: auto;
+  color: white;
+}
+/* media query */
+
+@media (max-width: 576px) {
+  body{
+    flex-direction: column;
+  }
+  nav{
+    border-bottom:solid 3px rgb(108, 250, 255) ;
+    overflow-y: scroll;
+    height: 300px;
+  }
+  main{
+    overflow-y: unset;
+  }
+}
+
